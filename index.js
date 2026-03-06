@@ -6,9 +6,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: 'https://data-cleaner-client-phi.vercel.app',
-    methods: ['GET', 'POST'],
-    credentials: true
+  origin: ['http://localhost:5173', 'https://your-app-name.vercel.app'],
+  methods: ['GET', 'POST'],
+  credentials: true
 }));
 
 app.use(express.json());
